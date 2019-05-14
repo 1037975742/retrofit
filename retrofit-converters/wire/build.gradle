@@ -1,0 +1,12 @@
+
+description = 'Converter: Wire Protocol Buffers'
+dependencies {
+  compile project(':retrofit')
+    compile(group: 'com.squareup.wire', name: 'wire-runtime', version:'2.2.0') {
+exclude(module: 'okio')
+    }
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'com.squareup.okhttp3', name: 'mockwebserver', version:'3.12.0'
+    testCompile group: 'org.assertj', name: 'assertj-core', version:'1.7.0'
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version:'3.0.2'
+}

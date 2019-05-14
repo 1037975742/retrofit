@@ -1,0 +1,14 @@
+
+description = 'Samples'
+dependencies {
+  compile project(':retrofit')
+  compile project(':retrofit-mock')
+  compile project(':retrofit-converters:converter-moshi')
+  compile project(':retrofit-converters:converter-gson')
+  compile project(':retrofit-converters:converter-simplexml')
+  compile project(':retrofit-adapters:adapter-rxjava')
+    compile group: 'com.squareup.okhttp3', name: 'mockwebserver', version:'3.12.0'
+    compile group: 'com.google.guava', name: 'guava', version:'19.0'
+    compile group: 'org.jsoup', name: 'jsoup', version:'1.7.3'
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version:'3.0.2'
+}
