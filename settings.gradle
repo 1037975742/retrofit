@@ -1,5 +1,5 @@
 rootProject.name = 'parent'
-include ':retrofit'
+include ':retrofit', ':libsample'
 include ':retrofit-adapters:adapter-guava'
 include ':retrofit-adapters:adapter-java8'
 include ':retrofit-adapters:adapter-rxjava'
@@ -18,7 +18,7 @@ include ':retrofit-converters:converter-moshi'
 include ':retrofit-converters:converter-jaxb'
 include ':retrofit-converters'
 include ':retrofit-mock'
-include ':samples'
+//include ':samples'
 
 project(':retrofit').projectDir = "$rootDir/retrofit" as File
 project(':retrofit-adapters:adapter-guava').projectDir = "$rootDir/retrofit-adapters/guava" as File
@@ -39,4 +39,4 @@ project(':retrofit-converters:converter-moshi').projectDir = "$rootDir/retrofit-
 project(':retrofit-converters:converter-jaxb').projectDir = "$rootDir/retrofit-converters/jaxb" as File
 project(':retrofit-converters').projectDir = "$rootDir/retrofit-converters" as File
 project(':retrofit-mock').projectDir = "$rootDir/retrofit-mock" as File
-project(':samples').projectDir = "$rootDir/samples" as File
+//project(':samples').projectDir = "$rootDir/samples" as File
